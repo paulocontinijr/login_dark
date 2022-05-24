@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background:	#202529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    width: 50vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left > h1{
+    color: 	#1BC6B4;
+}
+.right{
+    width: 70vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card > h1{
+    color: #1BC6B4;
+}
+.card{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 35px;
+    background: #32383D;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #4C555C;
+    color: #A1B4C4;
+    font-weight: 400;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+.textfield > label{
+    color: #1BC6B4;
+    margin-bottom: 10px;
+}
+.btnlogin{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline:none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #32383D;
+    background: #1BC6B4;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00000056;
+}
+.img-form{
+    width: 18px;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .img-login{
+        display: none;
+    }
+    .right{
+        width: 50vh;
+    }
+    .left{
+        width: 0vh;
+    }
+  }
